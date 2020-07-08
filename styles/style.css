@@ -40,8 +40,8 @@ section{
 }
 
 .submit-button{
-  background-image: linear-gradient(130deg,tomato,red);
-  margin-top: 3px;
+  background-image: linear-gradient(130deg,black,gray);
+  margin-top: 10px;
 }
 
 .card{
@@ -51,6 +51,11 @@ section{
 
 .card img{
   padding: 15px 30px;
+}
+
+.card-text{
+  font-size: smaller;
+  text-align: initial;
 }
 .card-body{
   padding: 30px;
@@ -76,6 +81,7 @@ section{
   background: #282531;
   color:#ffffff;
   padding: 30px;
+  font-family: 'Open Sans', sans-serif;
 
   
 }
@@ -97,5 +103,19 @@ section{
   width: 145px;
   
 } 
+
+.end-section ul li h5{
+  color:beige;
+}
+
+.end-section{
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.end-section i{
+  color: lightblue;
+}
+
 
 
