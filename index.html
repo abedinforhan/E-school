@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-school</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <section class="navbar-section">
+  <section class="navbar-section mt-0">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">
@@ -27,7 +29,7 @@
               <a class="nav-link" href="#">Books <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
+              <a class="nav-link" href="#courseId">Courses</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Others</a>
@@ -50,9 +52,9 @@
       <div class="row description">
         <div class="col-md-6 desc-col d-flex align-items-center">
           <div>
-            <h5>Are you ready to learn?</h5>
+            <h5 class="text-red">Are you ready to learn?</h5>
             <h1>Learn with Fun</h1>
-            <h1>on <span>any schedule</span></h1>
+            <h1>on <span class="text-green">any schedule</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ex! Vel, placeat cupiditate? Id,
               accusamus.</p>
             <button class="get-started-button">Get Started</button>
@@ -66,28 +68,60 @@
     </div>
   </section>
 
-  <!-- ###################bugs section################ -->
-  <div class="container my-5 ">
-    <div class="row">
-      <div class="col-md-2 offset-md-1 small-card ">
-        <img src="images/ICON/book.png" alt="">
+  <!-- ###################small card section starts################ -->
+  <div class="container description-desc">
+    <div class="card-deck ">
+
+      <div class="card small-card">
+        <div class="d-flex justify-content-center align-items-center pt-2">
+          <img class="card-img-top" src="images/ICON/book.png" alt="Card image cap">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">1500+ Topic</h5>
+          <small>Learn Anything</small>
+        </div>
+
       </div>
-      <div class="col-md-2 offset-md-1 small-card ">
-        <img src="images/ICON/book.png" alt="">
+      <div class="card small-card">
+        <div class="d-flex justify-content-center align-items-center pt-2">
+          <img class="card-img-top" src="images/ICON/Student.png" alt="Card image cap">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">1800+ Students</h5>
+          <small>Learn Anything</small>
+        </div>
+
       </div>
-      <div class="col-md-2 offset-md-1 small-card ">
-        <img src="images/ICON/book.png" alt="">
+      <div class="card small-card">
+        <div class="d-flex justify-content-center align-items-center pt-2">
+          <img class="card-img-top" src="images/ICON/Test.png" alt="Card image cap">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">9k+ Test token</h5>
+          <small>Leran Anything</small>
+        </div>
       </div>
-      <div class="col-md-2 offset-md-1 small-card ">
-        <img src="images/ICON/book.png" alt="">
+
+      <div class="card small-card">
+        <div class="d-flex justify-content-center align-items-center pt-2">
+          <img class="card-img-top" src="images/ICON/Students.png" alt="Card image cap">
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title">2000+ Student</h5>
+          <small>Learn Anything</small>
+        </div>
+
+
       </div>
     </div>
   </div>
-  
-  <!-- ###################bugs section################ -->
+
+
+  <!-- ###################small card section ends################ -->
 
   <!-- ################## Card-Deck  Starts######### -->
-  <section class="course container mt-5">
+  <section class="course container mt-5" id="courseId">
+    <h1 class="text-center mb-5">Online Courses</h1>
     <div class="card-deck">
       <div class="card">
         <img class="card-img-top" src="images/Morder pyschology.png" alt="Card image cap">
@@ -95,10 +129,14 @@
           <h5 class="card-title">Modern Pyshocolgy</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.</p>
-            <button class="get-started-button">Get Satrted</button>
+          <button class="get-started-button">Get Satrted</button>
           <div class=" d-flex justify-content-between mt-3">
-            <small>Starts 20th april 2021</small>
-            <small>60 Seats</small>
+            <div>
+              <i class="fa fa-calendar mr-1" aria-hidden="true"></i> <small>Starts 20th april 2021</small>
+            </div>
+            <div>
+              <i class="fa fa-user mr-1" aria-hidden="true"></i><small>60 Seats</small>
+            </div>
           </div>
         </div>
 
@@ -110,8 +148,12 @@
           <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           <button class="get-started-button">Get Satrted</button>
           <div class=" d-flex justify-content-between mt-3">
-            <small>Starts 20th april 2021</small>
-            <small>60 Seats</small>
+            <div>
+              <i class="fa fa-calendar mr-1" aria-hidden="true"></i> <small>Starts 20th april 2021</small>
+            </div>
+            <div>
+              <i class="fa fa-user mr-1" aria-hidden="true"></i><small>60 Seats</small>
+            </div>
           </div>
         </div>
 
@@ -125,8 +167,12 @@
           </p>
           <button class="get-started-button">Get Satrted</button>
           <div class=" d-flex justify-content-between mt-3">
-            <small>Starts 20th april 2021</small>
-            <small>60 Seats</small>
+            <div>
+              <i class="fa fa-calendar mr-1" aria-hidden="true"></i> <small>Starts 20th april 2021</small>
+            </div>
+            <div>
+              <i class="fa fa-user mr-1" aria-hidden="true"></i><small>60 Seats</small>
+            </div>
           </div>
         </div>
 
@@ -146,22 +192,24 @@
         <img src="images/Man.png" alt="">
       </div>
       <div class=" col-12 col-lg-7 testimonial-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eum eaque tempore sint sequi est itaque, dicta minus eos inventore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eum eaque tempore sint sequi est itaque, dicta
+          minus eos inventore.</p>
       </div>
     </div>
 
-    
+
   </section>
-   <!-- ################## Testimonial section  Endss######### -->
+  <!-- ################## Testimonial section  Endss######### -->
 
   <section class="footer">
     <div class="row ">
       <div class="col-12 col-lg-5 text-center text-lg-left">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, harum. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Adipisci, sit!</p>
       </div>
       <div class="col-12 col-lg-2 text-center text-lg-left">
         <ul class="list-unstyled ">
-          
+
           <li>Course</li>
           <li>Graphic Design</li>
           <li>Web Design</li>
@@ -190,17 +238,15 @@
           <li>Engineering</li>
         </ul>
       </div>
-      
-     
+
+
     </div>
-    
+
     <footer class="text-center py-3">
-      <small>Copyright 2020 rokomari.com</small> 
+      <small>Copyright 2020 rokomari.com</small>
     </footer>
 
   </section>
-  
-  
 
 
 
@@ -208,7 +254,9 @@
 
 
 
-  
+
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

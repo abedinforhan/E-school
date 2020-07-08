@@ -1,9 +1,21 @@
 body{
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
+.text-red{
+  color:#FD511A;
+}
+
+.text-green{
+  color:green;
+}
 section{
   margin: 40px 0px;
+}
+
+.description-desc{
+  margin-bottom: 150px;
 }
 
 .navbar-section{
@@ -28,12 +40,15 @@ section{
 
 .card{
   box-shadow: 10px 10px 20px gray;
+  border-radius: 18px;
 }
 
 .card img{
-  padding: 10px;
+  padding: 15px 30px;
 }
-
+.card-body{
+  padding: 30px;
+}
 
 
 
@@ -60,21 +75,21 @@ section{
 }
 
 .small-card{
-  width: 250px;
-  height: 250px;
-  border:2px solid green;
+  
+  box-shadow: none;
+  border: none;
   background: #F8FFFB;
-  border-radius: 10px;
+}
+
+.small-card:hover{
+ background-color: #ffffff;
+ transform: translateY(-15px);
 }
 
 .small-card img{
-  width: 66px;
-  height: 85px;
-}
-
-/* footer{
-  background: #282531;
-  color: #ffffff;
+  height: 140px;
+  width: 145px;
   
-  height: 20px;
-} */
+} 
+
+
